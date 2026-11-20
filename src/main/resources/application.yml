@@ -13,7 +13,6 @@ spring:
 
 # Qui est « l'utilisateur courant » tant qu'il n'y a pas de sécurité (UtilisateurCourantFake).
 app:
-  utilisateur-fake: alice
   cors:
     origines: http://localhost:4200
 
@@ -57,3 +56,7 @@ demo:
         - numero: FR76-0003
           agence: Paris Opéra
           virements: []
+          
+logging:
+  level:
+    org.springframework.security: DEBUG
